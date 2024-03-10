@@ -20,18 +20,20 @@ namespace DisableCSO.CSO
         public void HandleModDisable()
         {
             EventBus.Unsubscribe(this);
+            SetCSO();
         }
 
         public void HandleModEnable()
         {
             EventBus.Subscribe(this);
+            SetCSO();
         }
 
-        public void OnAreaLoadingComplete() => DisableCSO();
+        public void OnAreaLoadingComplete() => SetCSO();
 
         public void OnAreaScenesLoaded() { }
 
-        public static void DisableCSO()
+        public static void SetCSO()
         {
             var common = (CommonPCView) Game.Instance.RootUiContext.m_CommonView;
 
@@ -44,7 +46,7 @@ namespace DisableCSO.CSO
                 return;
 
             foreach (Transform transform in overlay.transform)
-                transform.gameObject.SetActive(Main.Settings.LetterBox && (transform.name == "TopLBX" || transform.name == "BotLBX"));
+                transform.gameObject.SetActive(!Main.ModEntry.Enabled || Main.Settings.LetterBox && (transform.name == "TopLBX" || transform.name == "BotLBX"));
         }
     }
 }

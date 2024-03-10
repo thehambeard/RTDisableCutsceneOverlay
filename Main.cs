@@ -16,12 +16,14 @@ namespace DisableCSO
 #endif
     internal static class Main
     {
+        public static UnityModManager.ModEntry ModEntry { get; private set; }
         public static Settings Settings;
         public static Utility.Logger Logger;
         public static ModEventHandler ModEventHandler;
 
         private static bool Load(UnityModManager.ModEntry modEntry)
         {
+            ModEntry = modEntry;
             Settings = UnityModManager.ModSettings.Load<Settings>(modEntry);
             Logger = new(modEntry.Logger);
             ModEventHandler = new();
@@ -74,7 +76,7 @@ namespace DisableCSO
         private static void OnGUIDebug(UnityModManager.ModEntry modEntry)
         {
             if (GUILayout.Button("Test"))
-                CSOController.DisableCSO();
+                CSOController.SetCSO();
 
             OnGUI(modEntry);
         }
