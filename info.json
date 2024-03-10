@@ -7,5 +7,7 @@
   "Requirements": [],
   "AssemblyName": "DisableCSO.dll",
   "EntryMethod": "DisableCSO.Main.Load",
-  "LoadAfter": [ "MewsiferConsole.Mod" ]
+  "LoadAfter": [ "MewsiferConsole.Mod" ],
+  "HomePage": "https://github.com/thehambeard/RTDisableCutsceneOverlay/releases",
+  "Repository": "https://raw.githubusercontent.com/thehambeard/RTDisableCutsceneOverlay/main/Repo.json"
 }
