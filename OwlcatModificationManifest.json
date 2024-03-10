@@ -1,0 +1,12 @@
+{
+  "UniqueName": "DisableCSO",
+  "Version": "1.0.0",
+  "DisplayName": "Disable Cutscene Overlay",
+  "Description": "Removes annoying camera overlay during cutscenes. Keeping the letterboxing is optional.",
+  "Author": "Hambeard",
+  "ImageName": "Preview.jpg",
+  "WorkshopId": "3107755014",
+  "Repository": "",
+  "HomePage": "",
+  "Dependencies": []
+}
