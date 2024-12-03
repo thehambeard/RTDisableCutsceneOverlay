@@ -2,12 +2,12 @@
   "Id": "DisableCSO",
   "DisplayName": "Disable Cutscene Overlay",
   "Author": "Hambeard",
-  "Version": "1.0.0",
+  "Version": "1.0.1",
   "ManagerVersion": "0.23.4",
   "Requirements": [],
   "AssemblyName": "DisableCSO.dll",
   "EntryMethod": "DisableCSO.Main.Load",
-  "LoadAfter": [ "MewsiferConsole.Mod" ],
+  "LoadAfter": [ ],
   "HomePage": "https://github.com/thehambeard/RTDisableCutsceneOverlay/releases",
   "Repository": "https://raw.githubusercontent.com/thehambeard/RTDisableCutsceneOverlay/main/Repo.json"
 }
