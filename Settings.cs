@@ -6,6 +6,6 @@ namespace DisableCSO
     {
         public bool LetterBox = true;
 
-        public override void Save(UnityModManager.ModEntry modEntry) => base.Save(modEntry);
+        public override void Save(UnityModManager.ModEntry modEntry) => Save(this, modEntry);
     }
 }
